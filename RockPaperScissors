@@ -1,0 +1,86 @@
+#include <algorithm>
+#include <iostream>
+#include <windows.h>//For sleep function
+#include <ctime>    //To get current time
+#include <cstdlib>  //for rand() and srand()
+
+
+using namespace std;
+int main() {
+    //Seeding the random number generator
+    srand(static_cast<unsigned int>(time(0)));
+
+    //Getting random output
+    int randomValue=rand()%3;
+
+    //Declare variables
+    int userChoice;
+    int pcChoice;
+    string pcChoiceString;
+
+    /*Rock Paper Scissors Logic
+    cout << "Rock vs Scissor -> Rock wins" << endl << "Rock vs Paper -> Paper wins" << endl << "Paper vs Scissor -> Scissor wins" <<endl;
+    cout << "| Rock | Paper | Scissor |" << endl;
+    */
+
+    //Recieves User choice
+    cout << "Rock(0) Paper(1) or Scissor(2) ? ";
+    cin >> userChoice;
+    Sleep(1000);
+    if (userChoice == 0)
+        cout << " User choice --> Rock";
+    else if (userChoice == 1)
+        cout << " User choice --> Paper";
+    else if (userChoice == 2)
+        cout << " User choice --> Scissor";
+    else {
+        cout << "Invalid Choice";
+        return 0;
+    }
+    cout << endl;
+    //get pc choice user random
+    pcChoice = randomValue;
+    cout << " PC choice --> ";
+
+    switch (pcChoice) {
+        case 0:
+            cout << "Rock";
+        pcChoiceString = "Rock";
+
+        break;
+        case 1:
+            cout << "Paper";
+        pcChoiceString = "Paper";
+        break;
+        case 2:
+            cout << "Scissor";
+        pcChoiceString = "Scissor";
+        break;
+    }
+
+    cout << endl;
+    //Rock = 1 Paper = 2 Scissor= 2
+    if (userChoice == pcChoice) {
+        cout << "DRAW";
+    }
+    //Rock wins
+    else if (userChoice == 1 && pcChoice==2){
+        cout << "ROCK WINS" << endl;
+        cout << "User wins";
+    }
+
+    //Paper wins
+    else if (userChoice == 2 && pcChoice==1){
+        cout << "PAPER WINS"<< endl;
+        cout << "User wins";
+    }
+    //Scissor Wins
+    else if (userChoice == 3 && pcChoice==2){
+        cout << "Scissor WINS"<< endl;
+        cout << "User wins";
+    }
+    else {
+        cout << pcChoiceString << " WINS | ";
+        cout << "PC WINS";
+    }
+}
