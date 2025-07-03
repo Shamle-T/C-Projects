@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED61ECD5-A7D2-87AB-618E-7B6FAA2E463A" name="PORT">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<generatorID>D8A89A41-0771-97AD-BAA3-4AF36808D498</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="port_code" id="D09CDC2D-2587-331F-60E5-2B5E7147026B">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[port code]]></commentInRDBMS>
+<generatorID>5B66D610-A620-7B9E-BD2C-038548EE83B5</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="port_name" id="3F02B279-0C2A-5E6E-8FF5-B9A85E3F26E7">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[port name]]></commentInRDBMS>
+<generatorID>0E469BB2-9BE0-BD36-0F6C-23FF60FA01DC</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="port_lat" id="E8C066D1-9139-76E2-B451-FC9BDEF99E17">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[port lattitude]]></commentInRDBMS>
+<generatorID>8DAC0353-F390-A3A5-F258-BC75FA5C5C65</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="port_longt" id="23B4229D-CC0F-BA3D-7D2F-AD677399559E">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[port longtitude]]></commentInRDBMS>
+<generatorID>5435C48C-7404-4729-2912-187B91F8939A</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country_code" id="61915FE0-D71D-0DCA-5E90-689642B74C1B">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[country code]]></commentInRDBMS>
+<generatorID>7B353441-EEC8-7EEF-DFF9-DBC27A2670F8</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EAE25959-E50C-D1DF-9317-CEF887C8078F" referredColumn="EABB7EAA-7AD7-88A0-1407-1814C0FC887C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4560DBE-B4C3-49AA-9F3C-A03178B049C5" name="PORT_PK">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<generatorID>66A16F9C-5055-1F46-1FB7-11AFAA8CDC85</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D09CDC2D-2587-331F-60E5-2B5E7147026B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A57648CE-92B0-CC00-B63C-C3D07DC6618A" name="fk_countrydetails_port">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<generatorID>98505DAA-96DE-2E67-111E-F9F0E1228D12</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61915FE0-D71D-0DCA-5E90-689642B74C1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

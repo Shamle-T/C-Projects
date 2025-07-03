@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_ship_operator" directorySegmentName="seg_0" id="981CD247-E79A-CEF0-FA59-B535181469BD">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 12:13:55 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<targetPk>6888C4CB-5B42-85B6-4E42-8BA6CECC4A6E</targetPk>
+<identifying>false</identifying>
+<nameOnSource> </nameOnSource>
+<nameOnTarget>operates</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>64555236-222A-B3F7-F7DF-B7D52EB380CE</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D323F91F-5CE5-38A9-5D79-2A919A7D60BF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

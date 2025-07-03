@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_cruiseid_depdatetime" directorySegmentName="seg_0" id="94FA7AC9-3E5A-24E9-B758-D2C400C43956">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 12:32:18 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<sourcePk>60113979-E6B0-B4F9-BFBC-1E1905A1F541</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>includes</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>33BAC026-B143-D659-A2CC-762CF43C1E79</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>82A5ECBB-C4D9-4653-7E5E-7699A448643D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

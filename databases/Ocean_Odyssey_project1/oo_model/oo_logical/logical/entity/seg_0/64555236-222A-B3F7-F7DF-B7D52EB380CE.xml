@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="64555236-222A-B3F7-F7DF-B7D52EB380CE" name="SHIP">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 04:32:20 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ship_id" id="6255AA36-8842-68F9-E0B0-92EC090ED80E">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 04:32:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[ship number]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_name" id="E28935E2-D7E4-6120-903D-2230765B5CE0">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 04:32:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[ship name]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_commission_date" id="80B30580-5095-B57B-4AF2-8D70426B7F9A">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 04:36:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[ship commission date]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_tonnage" id="1C9AFDB4-98A6-D6FA-144E-2D06CD6E6AA6">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 04:37:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[ship tonnage - maximum weight it can carry]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_max_guest_capacity" id="EB93EC97-4010-CDDF-5810-3CE8375A6D1F">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 04:38:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[maximum guest capacity]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_registered_country" id="5B1C193E-9DF2-D40D-B034-0F5ADFD6DE5E">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 04:38:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[ship registered country]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oper_id" id="6CD55FCF-78EA-A078-CE55-05B99ED6EB47">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 12:14:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[operator number]]></commentInRDBMS>
+<generatorID>981CD247-E79A-CEF0-FA59-B535181469BD</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<referedAttribute>CDAA2B92-E92D-86AE-CB90-A71DB17A667B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="365B5C5B-3B70-A932-5192-9EFE0F1B7F08" name="SHIP PK">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 04:40:23 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6255AA36-8842-68F9-E0B0-92EC090ED80E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

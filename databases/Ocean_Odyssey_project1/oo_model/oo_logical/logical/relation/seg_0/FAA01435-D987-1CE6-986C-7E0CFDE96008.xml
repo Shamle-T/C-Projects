@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_passenger_id" directorySegmentName="seg_0" id="FAA01435-D987-1CE6-986C-7E0CFDE96008">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 06:00:07 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<sourcePk>F796FAEC-AFD3-01DC-321F-45D847A04F3C</sourcePk>
+<identifying>true</identifying>
+<nameOnSource> </nameOnSource>
+<nameOnTarget>books</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8C1EACB5-4852-50AF-99B9-2042CB26F272</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7FB10F91-234D-EC5B-E91F-016E93FFC1EE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

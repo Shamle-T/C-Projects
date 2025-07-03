@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA75C01C-958D-19A7-09C0-7DF35AD67B81" name="CABIN">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<generatorID>296CECF0-3EC9-8493-52C6-2B0A44826468</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cabin_id" id="41B50BEC-4C9C-5E4B-5129-E7952A4F7122">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[cabin number]]></commentInRDBMS>
+<generatorID>A46917DA-42E3-DB0E-1A09-E54F63CA4A3E</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cabin_sleep_cap" id="B5845AC6-6FAD-BC35-9A1F-625999FDE112">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[sleep cabin capacity]]></commentInRDBMS>
+<generatorID>B6E41987-5384-CDAD-C4B1-8F8F0B2563C2</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cabin_class" id="62DBD057-AD9A-421B-EE11-862827559DAA">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Lookup table values have been added : INT - Interior, OCV - Ocean view,BAL -  Balcony, SUT -  Suite ]]></commentInRDBMS>
+<generatorID>E021247B-1CBD-84FE-2571-97D56E54ADD7</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<constraintName>chk_cabinclass</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="BAL" description="Balcony"/>
+<valueDef value="INT" description="Interior"/>
+<valueDef value="OCV" description="Ocean view"/>
+<valueDef value="SUT" description="Suite"/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_id" id="CDC56424-EDE4-4E47-239B-803232E3D4BA">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[ship number]]></commentInRDBMS>
+<generatorID>FE22E791-C231-F940-18DD-B66EAA45DCDC</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="012078CD-E86A-32A5-3801-BA0D1B37FFE7" referredColumn="CFFE414A-97E2-A780-C82E-D0004D4E023B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B7B2FBD-8288-8138-CA65-F1C5C25D18FF" name="CABIN_PK">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<generatorID>4163FBC5-5AA0-A48C-E8A0-0EBC9416F1C0</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41B50BEC-4C9C-5E4B-5129-E7952A4F7122"/>
+<colUsage columnID="CDC56424-EDE4-4E47-239B-803232E3D4BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6571AB0-AE6C-FAB8-E1D7-F3065B4C1F97" name="fk_ship_cabin">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<generatorID>DF21E664-676D-13A5-64CE-5403AD471050</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDC56424-EDE4-4E47-239B-803232E3D4BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

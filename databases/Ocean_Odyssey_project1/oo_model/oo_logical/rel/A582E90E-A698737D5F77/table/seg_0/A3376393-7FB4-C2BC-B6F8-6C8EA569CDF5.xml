@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3376393-7FB4-C2BC-B6F8-6C8EA569CDF5" name="PASSENGER">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<generatorID>8C1EACB5-4852-50AF-99B9-2042CB26F272</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="passenger_id" id="E3306B26-5D97-9C83-DCDC-AE67A355FA4F">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger number]]></commentInRDBMS>
+<generatorID>D132D071-C953-ED18-9534-09704D7C5B36</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passenger_fname" id="1CC90257-F7B7-E1E2-AF38-318921856A03">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger first name]]></commentInRDBMS>
+<generatorID>D10D90CC-32DB-C050-1F50-5D26466C5972</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passenger_lname" id="2FDA14AE-1C0D-CE43-23B1-6C012CBE870B">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger last name]]></commentInRDBMS>
+<generatorID>773C1EAA-EC20-D9E7-8388-D3415FFD772D</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passenger_dob" id="6417934D-18F6-F297-B8F8-2C6E8E7D7941">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger date of birth]]></commentInRDBMS>
+<generatorID>6894BA56-8258-0BB1-8808-86739929D4F9</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passenger_gender" id="2620BAB0-B4E5-8457-A774-11FC3F57898E">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger gender]]></commentInRDBMS>
+<generatorID>6F50216E-4A24-1BE0-B51A-D0F4BDED1230</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Female"/>
+<valueDef value="M" description="Male"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="guardian_id" id="78039BAE-5B38-37CE-5318-C7DE4D7FDDBB">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger number]]></commentInRDBMS>
+<generatorID>A96F131B-515B-2213-E4B2-D5F27C2F7BF5</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE920A59-7AC4-F16D-2F67-89DA31BB4D2D" referredColumn="E3306B26-5D97-9C83-DCDC-AE67A355FA4F"/>
+</associations>
+</Column>
+<Column name="address_id" id="0D0D7F60-9004-B6D7-4B67-FBA23F838722">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[address id - surrogate key]]></commentInRDBMS>
+<generatorID>89DA773B-FC8C-00EB-5D35-5FC5E8887999</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60B43456-1BF0-3AF9-1060-2ACB899D6310" referredColumn="10CC8DED-2D6F-0DB0-84C2-DFE32C27E24A"/>
+</associations>
+</Column>
+<Column name="phone_num" id="901D3253-82D7-9FCE-E0CC-159F6877766B">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[phone number]]></commentInRDBMS>
+<generatorID>D25E6EC4-E1EB-28B8-4996-007C1F89C70B</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DBFBB7EA-74FA-C78C-0360-F7505F265946" name="PASSENGER_PK">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<generatorID>F796FAEC-AFD3-01DC-321F-45D847A04F3C</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3306B26-5D97-9C83-DCDC-AE67A355FA4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4B14D04-B86B-978A-D82A-905F34C2FE24" name="fk_address_id">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<generatorID>E3F78E4E-68F3-CAB2-7C69-FE97BDD844CF</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D0D7F60-9004-B6D7-4B67-FBA23F838722"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60ABE107-065F-C0BF-253A-91988BE996F5" name="guardian_minor">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-30 07:20:04 UTC</createdTime>
+<generatorID>BE7108D8-7619-89A1-3E19-24BAFDD87530</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78039BAE-5B38-37CE-5318-C7DE4D7FDDBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

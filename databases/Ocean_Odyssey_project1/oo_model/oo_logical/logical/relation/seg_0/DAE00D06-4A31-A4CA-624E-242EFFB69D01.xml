@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_port_journey" directorySegmentName="seg_0" id="DAE00D06-4A31-A4CA-624E-242EFFB69D01">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 12:34:56 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<sourcePk>66A16F9C-5055-1F46-1FB7-11AFAA8CDC85</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>contains</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D8A89A41-0771-97AD-BAA3-4AF36808D498</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>82A5ECBB-C4D9-4653-7E5E-7699A448643D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

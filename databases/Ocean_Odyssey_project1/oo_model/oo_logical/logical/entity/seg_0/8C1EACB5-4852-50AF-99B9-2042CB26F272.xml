@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8C1EACB5-4852-50AF-99B9-2042CB26F272" name="PASSENGER">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:25:27 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="passenger_id" id="D132D071-C953-ED18-9534-09704D7C5B36">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:25:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger number]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="passenger_fname" id="D10D90CC-32DB-C050-1F50-5D26466C5972">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:25:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger first name]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="passenger_lname" id="773C1EAA-EC20-D9E7-8388-D3415FFD772D">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:26:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger last name]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="passenger_dob" id="6894BA56-8258-0BB1-8808-86739929D4F9">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:27:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger date of birth]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="passenger_gender" id="6F50216E-4A24-1BE0-B51A-D0F4BDED1230">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:27:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger gender]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Female"/>
+<valueDef value="M" description="Male"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="guardian_id" id="A96F131B-515B-2213-E4B2-D5F27C2F7BF5">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 12:42:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[passenger number]]></commentInRDBMS>
+<generatorID>BE7108D8-7619-89A1-3E19-24BAFDD87530</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<referedAttribute>D132D071-C953-ED18-9534-09704D7C5B36</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address_id" id="89DA773B-FC8C-00EB-5D35-5FC5E8887999">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 13:12:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[address id - surrogate key]]></commentInRDBMS>
+<generatorID>E3F78E4E-68F3-CAB2-7C69-FE97BDD844CF</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<referedAttribute>D4138A67-F815-1207-ECE1-3C51BD0CC3E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone_num" id="D25E6EC4-E1EB-28B8-4996-007C1F89C70B">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 18:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[phone number]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F796FAEC-AFD3-01DC-321F-45D847A04F3C" name="PASSENGER PK">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:25:51 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D132D071-C953-ED18-9534-09704D7C5B36</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

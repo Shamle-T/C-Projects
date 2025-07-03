@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="296CECF0-3EC9-8493-52C6-2B0A44826468" name="CABIN">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:11:54 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cabin_id" id="A46917DA-42E3-DB0E-1A09-E54F63CA4A3E">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:12:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[cabin number]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cabin_sleep_cap" id="B6E41987-5384-CDAD-C4B1-8F8F0B2563C2">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:12:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[sleep cabin capacity]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cabin_class" id="E021247B-1CBD-84FE-2571-97D56E54ADD7">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:13:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Lookup table values have been added : INT - Interior, OCV - Ocean view,BAL -  Balcony, SUT -  Suite ]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<constraintName>chk_cabinclass</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="BAL" description="Balcony"/>
+<valueDef value="INT" description="Interior"/>
+<valueDef value="OCV" description="Ocean view"/>
+<valueDef value="SUT" description="Suite"/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_id" id="FE22E791-C231-F940-18DD-B66EAA45DCDC">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 12:15:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[ship number]]></commentInRDBMS>
+<generatorID>DF21E664-676D-13A5-64CE-5403AD471050</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<referedAttribute>6255AA36-8842-68F9-E0B0-92EC090ED80E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4163FBC5-5AA0-A48C-E8A0-0EBC9416F1C0" name="CABIN PK">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 07:13:38 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A46917DA-42E3-DB0E-1A09-E54F63CA4A3E</attributeRef>
+<attributeRef>FE22E791-C231-F940-18DD-B66EAA45DCDC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

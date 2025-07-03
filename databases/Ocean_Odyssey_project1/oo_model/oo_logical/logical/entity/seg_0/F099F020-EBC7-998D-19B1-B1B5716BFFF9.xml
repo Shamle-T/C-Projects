@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F099F020-EBC7-998D-19B1-B1B5716BFFF9" name="COUNTRY_DETAILS">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 09:08:33 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="country_code" id="C2800424-127B-CF3D-7E11-A64AAF959195">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 09:08:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[country code]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="country_name" id="ADDD6B19-432A-7A81-7AF9-D5A4D1783B6C">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 09:09:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[country name]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D6FD8978-CC9F-7E02-0C30-2BB415DBCE8F" name="COUNTRY_DETAILS PK">
+<createdBy>Shane</createdBy>
+<createdTime>2025-04-22 09:08:52 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="A582E90E-F437-A680-3D82-A698737D5F77" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C2800424-127B-CF3D-7E11-A64AAF959195</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
