@@ -1,4 +1,4 @@
-📘 Databases
+📘 Databases Project 2
 🔍 Title: Creating, Populating, and Manipulating a Database – Run Monash (RM)
 
 📝 Overview
